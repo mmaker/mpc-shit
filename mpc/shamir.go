@@ -6,9 +6,7 @@ import (
 	"math/big"
 )
 
-// Split the secret word "w" into "s" shares, whose any recombination of the
-// above the threshold "t" may reconstruct them.
-func Split(s, t int, w,  mod *big.Int, random io.Reader) []*big.Int {
+func Split(s int, t int, w *big.Int,  mod *big.Int, random io.Reader) []*big.Int {
 	t++;
 
  	poly := make([]*big.Int, t);
