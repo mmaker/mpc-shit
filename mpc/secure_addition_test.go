@@ -24,5 +24,4 @@ func TestSecureAddition(t *testing.T) {
 	if got.Cmp(expected) != 0 {
 		t.Errorf("Expected %v, got %v", expected, got)
 	}
-
 }
