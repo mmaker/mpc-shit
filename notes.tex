@@ -1,0 +1,35 @@
+\documentclass[10pt,a4paper,oneside]{memoir}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{enumitem}
+\usepackage{braket}
+
+\newtheorem{thm}{Theorem}[chapter]
+\theoremstyle{definition}
+\newtheorem{dfn}[thm]{Definition}
+
+\begin{document}
+
+\begin{dfn}[Perfect Correctedness]
+  All players receive outputs that are correct based on the input supplied.
+\end{dfn}
+
+\begin{dfn}[Perfect Privacy]
+  Any subset $C$ of $t < n/2$ corrupted players gains no information beyond the
+  pairs $\set{x_j, y_j}_{P_j \in C}$ of inputs, outputs of the corrupted
+  players, regardless of their computing power.
+\end{dfn}
+
+\begin{dfn}[Simulation Paradigm]
+  Technique to prove that someone learns only information $X$ by showing that
+  everything he sees can be \emph{efficiently} recreated, or simulated, given
+  only $X$.
+\end{dfn}
+
+\begin{dfn}[Robust Protocol]
+  A protocol is said to be \emph{robust} if correct and private, even if some
+  parties do not follow the protocol.
+\end{dfn}
+
+\end{document}
